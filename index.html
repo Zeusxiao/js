@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<script src="index.js"></script>
+</head>
+<body>
+
+
+   <script>	
+     //alert(1);
+     //console.log("李四");
+     //document.write("张三");
+     
+     // var a;
+     // a= 1;
+     // alert(a);
+
+      // var a=10;
+      // alert(a);
+      
+   
+      // var x;
+      // alert(x);
+ 
+       // y=50;
+       // alert(y);
+         
+        // var b;
+        // alert(b);
+        // b=70;
+        // alert(Number.MAX_VALUE);
+        // alert(Number.MIN_VALUE);
+       
+       /*var num1=43;
+       var num2=40;
+    
+       var info='我们班有两个班组成，第一个班505班有'+num1+'人，第二个班507班有'+num2+'人,总共有'+(num1+num2)+'人';
+         
+       console.log(info);*/
+         
+
+         // a +=1//相当于a=a+1
+         
+         // var num1 = "abc";
+         // var num2 ="b" ;
+         // alert(num2<=num1);
+         
+         //  alert(undefined==null);
+
+
+         // var num1=10;
+         // var num2=30;
+         // alert(num1 && num2);
+         // alert(num1<=20 && num2>=num1)
+         // console.log(num1<10 && num2>=20)
+         // console.log(num1>=10 && num2>=20)
+
+         // console.log(num1>10 || num2)
+         
+         // console.log(num1<10 || num2>=20);
+
+         
+         // var num = 100;
+         // var flag;
+         // flag=num%2 ==0 ?true:false;
+         // console.log(flag);
+ 
+
+
+
+
+
+         // var num=10;
+         // if(num>1){
+         //     alert(true)
+         // }
+
+         // var num1=-5;
+         // if(num1>0){
+         //     alert(true)
+              
+         // }else{
+         //     alert(false)
+             
+         // }
+       
+
+          // var score=prompt('请输入分数', 60)
+          // if(score>=90 && score<=100){
+          // 	alert('优秀')
+ 
+          // }else if(score>=80 && score<90){
+          // 	alert('良好')
+
+          // }else if(score>=70 && score<80){
+          // 	alert('中等')
+
+          // }else if(score>=60 && score<70){
+          // 	alert('及格')
+
+          // }else if(score>=0 && score<60){
+          // 	alert('不及格')
+
+          // }else{
+          // 	alert('输入错误，请重新输入')
+          // }
+
+          // var week = prompt('请输入星期',1 )
+          // switch(week){
+          //     case '1':
+          //        alert('一组');
+          //        break;
+          //     case '2':
+          //        alert('二组');
+          //        break;
+          //     case '3':
+          //        alert('三组');
+          //        break;
+          //     case '4':
+          //        alert('四组');
+          //        break;
+          //     case '5':
+          //        alert('五组');
+          //        break;
+          //     case '6':
+          //        alert('六组');
+          //        break;
+          //     case '7':
+          //        alert('七组');
+          //        break;
+          //     defaut:
+          //        alert('输入错误，请重新输入')
+          // }
+
+
+          //for循环
+          
+          // for(var i=1;i<=10;i++){
+          // 	 alert(i);
+
+          // }
+          
+           
+           
+          //1~10求和
+          // var sum = 0;
+          // for(i=1;i<11;i++){
+          // 	sum += i;
+          // }
+          // alert(sum);
+          // console.log(sum);
+          //
+          //
+          //任意范围求和
+         
+          
+          //
+          //
+          //任意范围偶数或奇数求和
+          //
+          //偶数求和第一种方法
+           /* var sum =0;
+           for(var i=0;i<=100;i+=2){
+           	   sum += i;
+           }
+           alert(sum);*/
+          //偶数求和第二种方法
+          
+          /*var sum =0;
+           for(var i=0;i<=100;i++){
+           	  if(i%2==0){
+                 sum += i;
+           	  }
+           }
+           alert(sum);*/
+
+           //九九乘法表
+      // document.write('<table border=1 cellspacing=0 cellspadding=5 align=center width=800 height=400>')
+      //        for(var r=1;r<10;r++){
+      //             var color;
+      //             //行颜色开始
+      //             if(r%2==0){
+      //                color='skyblue';
+      //             }else{
+      //                color='pink';
+      //             }
+      //             //行颜色结束
+      //             document.write('<tr bgcolor='+color+'>');
+      //             for(var d=1; d<=r;d++){                                             
+      //                  document.write('<td align=center>'+d+'*'+r+'='+(r*d)+'</td>');
+      //             }               
+      //             document.write('</tr>');
+      //        }
+      // document.write('</table>')
+
+      // document.write('<br/>')
+
+           //建立表格第一种方法{9.5作业}
+          
+           //建立表格第二种方法{变量}
+           
+          /* var table = "<table>"
+           for(var i=1;i<10;i++){
+              table +="<tr>"
+                 for(var j=1;j<=i;j++){
+                     // if((i=3&&j=3) || (i=4&&j=3)){
+                     //   document.write('&nbsp;<td></td>');
+                     // }
+                     table += "<td>"+j+"*"+i+"="+(i*j)+"</td>"
+                 }
+                 table +="</tr>"
+              
+           }
+          
+          document.write(table);*/
+
+
+
+
+          //金字塔
+          
+         /* var row=5;
+          for(var i=1;i<=row;i++){
+             for(var j=1;j<=row-i;j++){
+                document.write('&nbsp');
+             }
+             for(var j=1;j<=2*i-1;j++){
+                document.write('*');
+             }
+             document.write('<br/>')
+          }*/
+
+
+
+          //数列
+         /* var i=1,j=1;
+          for(var k=0;k<=100;){
+             k=i+j;
+             document.write(k+'&nbsp');
+             i=j;
+             j=k;
+          }*/
+
+         
+         //数组
+        //var arr=[8,41,25,63,12,27,31];
+
+             //数组遍历
+             
+            /*for(var i=0;i<=arr.length-1;i++){
+              console.log(arr[i]);
+            }*/
+
+      document.write('<br/>');
+             
+            //求最大值
+            /*var max=arr[0];
+            for(var i=0;i<arr.length;i++){
+                 if(max<arr[i]){
+                     max=arr[i];
+                 }
+            }
+            console.log(max);*/
+
+      document.write('<br/>');
+
+              //降序
+        /*for(var i=0;i<arr.length;i++){
+              for(var j=i+1;j<arr.length;j++){
+                      if(arr[i]<arr[j]){
+                          var temp = arr[i];
+                          arr[i]=arr[j];
+                          arr[j]=temp;
+                      }
+              }
+                
+        }
+        document.write(arr);*/
+
+
+      document.write('<br/>');
+
+
+
+            //升序
+        /*for(var i=0;i<arr.length;i++){
+              for(var j=0;j<arr.length;j++){
+                      if(arr[i]<arr[j]){
+                          var temp = arr[i];
+                          arr[i]=arr[j];
+                          arr[j]=temp;
+                      }
+              }
+                
+        }
+        document.write(arr);*/
+
+
+      document.write('<br/>');
+
+     //二维数组求最大值
+     /*var zhangsan=[84,65,74];
+     var lisi=[63,56,42];
+     var wangwu=[32,71,23];
+     var classes=[zhangsan,lisi,wangwu];
+     
+
+     for(var i=0;i<classes.length;i++){
+         //classes[i]
+         for(var j=0;j<classes[i].length;j++){
+              //classes[i][j]
+              var max=classes[0][0];
+              if(max<classes[i][j]){
+                max=classes[i][j];
+              }
+         }
+
+     }
+     document.write(max);*/
+
+
+      document.write('<br/>');
+     
+     
+     //数组去空（一）
+     /*var arr=[1,2,3,4,,5,6,7,,8,9];
+     var j=0;
+     var newarr=[];
+       for(var i=0;i<arr.length;i++){
+
+          if(arr[i]!=undefined){
+                
+                 newarr[j]=arr[i];
+                 j++;  
+          }
+       }
+       console.log(newarr);*/
+
+      //数组去空（二）
+      
+     /* var arr=[1,2,3,4,,5,6,7,,8,9];
+      var newarr=[];
+       for(var i=0;i<arr.length;i++){
+           if(arr[i]!=undefined){              
+              newarr[newarr.length]=arr[i];
+           }
+       }
+      console.log(newarr);*/
+
+      //数组去空（三）
+      /*var arr=[1,2,3,4,,5,6,7,,8,9];
+      var newarr=[];
+       for(var i=0;i<arr.length;i++){
+          if((typeof arr[i])!='undefined'){
+             newarr[newarr.length]=arr[i];
+          }
+       }
+      console.log(newarr);*/
+
+      document.write('<br/>');
+
+
+
+
+
+     // 函数
+
+
+
+      //任意行任意列->函数体变量->形参（rows,cols）->实参
+      /* table(5,5);   //调用
+      
+      function table(rows,cols){
+           var table = "<table border=1>"
+           for(var i=1;i<=rows;i++){
+              table +="<tr>"
+                 for(var j=1;j<=cols;j++){
+                     
+                     table += "<td>"+j+"*"+i+"="+(i*j)+"</td>"
+                 }
+                 table +="</tr>"
+              
+           }
+          
+          document.write(table);
+      }*/
+
+
+                
+      //任意范围内偶数求和
+      /*  sum(10);
+      function sum(n){
+           var sum =0;
+           for(var i=0;i<=n;i+=2){
+               sum += i;
+           }
+           alert(sum);
+      }*/
+     
+      document.write('<br/>');
+
+       
+        //金字塔
+    /*  gold(10);
+      function gold(row){
+           // var row=5;
+           for(var i=1;i<=row;i++){
+               for(var j=1;j<=row-i;j++){
+                 document.write('&nbsp');
+               }
+               for(var j=1;j<=2*i-1;j++){
+                 document.write('*');
+               }
+               document.write('<br/>')
+           }
+      }*/
+   document.write('<br/>');      
+       
+        //数列
+      /*  fn(200);
+        function fn(m){
+              var i=1,j=1;
+              for(var k=0;k<=m;){
+                 k=i+j;
+                 document.write(k+'&nbsp');
+                 i=j;
+                 j=k;
+              }
+        }*/
+
+   document.write('<br/>');      
+    
+           //数组遍历
+         /*   var arr1=[8,41,25,63,12,27,31];
+            var arr2=[54,55,22,21,44,33];
+            fn(arr1);
+            function fn(arr){
+                  for(var i=0;i<=arr.length-1;i++){
+                        console.log(arr[i]);
+                  }
+            }  */
+           
+        
+   document.write('<br/>');      
+    
+         //求最大值
+     /* var arr1=[25,65,32,21,14,45,74,78,59,58];
+      var arr2=[54,55,22,21,44,33];
+      fn(arr1);
+      function fn(arr){
+          var max=arr[0];
+            for(var i=0;i<arr.length;i++){
+                 if(max<arr[i]){
+                     max=arr[i];
+                 }
+            }
+            console.log(max);
+
+      }*/
+
+   document.write('<br/>');     
+
+             //降序
+       /* var arr1=[8,41,25,63,12,27,31];
+        var arr2=[54,55,22,21,44,33];
+        fn(arr2);
+        function fn(arr){
+              for(var i=0;i<arr.length;i++){
+              for(var j=i+1;j<arr.length;j++){
+                      if(arr[j]>arr[i]){
+                          var temp = arr[i];
+                          arr[i]=arr[j];
+                          arr[j]=temp;
+                      }
+              }
+                
+        }
+        document.write(arr);
+
+        }*/
+        
+
+
+      document.write('<br/>');
+
+
+
+            //升序
+   /*     var arr1=[8,41,25,63,12,27,31];
+        var arr2=[54,55,22,21,44,33];
+        fn(arr1);
+        function fn(arr){
+
+              for(var i=0;i<arr.length;i++){
+                  for(var j=i+1;j<arr.length;j++){
+                       if(arr[j]<arr[i]){
+                           var temp = arr[j];
+                           arr[j]=arr[i];
+                           arr[i]=temp;
+                       }
+                  }
+                
+              }
+              document.write(arr);
+        } 
+       */
+
+      document.write('<br/>');
+
+         //二维数组求最大值
+   /*  var zhangsan=[84,65,74];
+     var lisi=[63,56,42];
+     var wangwu=[32,71,23];
+     var classes1=[zhangsan,lisi,wangwu];
+
+     var a=[44,65,74];
+     var b=[63,66,42];
+     var c=[32,51,23];
+     var abc=[a,b,c];
+     fn(classes1);
+     function fn(classes){
+          var max=classes[0][0];
+           for(var i=0;i<classes.length;i++){
+         //classes[i]
+               for(var j=0;j<classes[i].length;j++){
+               //classes[i][j]
+               
+               if(max<classes[i][j]){
+                  max=classes[i][j];
+               }
+         }
+
+     }
+     document.write(max);
+
+     }
+    */
+
+      document.write('<br/>');
+    
+
+    //数组去空（二）
+    
+        
+    /*  var arr1=[1,2,3,4,,5,6,7,,8,9];
+      var arr2=[54,55,,22,21,,44,,33,76];
+      var newarr=[];
+      fn(arr2);
+      function fn(arr){
+           for(var i=0;i<arr.length;i++){
+                if(arr[i]!=undefined){              
+                   newarr[newarr.length]=arr[i];
+                }
+           }
+            console.log(newarr);
+
+      }  */
+       
+      document.write('<br/>');
+     
+
+    //在数组后面添加任意元素
+ /*  var arr=[1,2,3,4,5,6,7];
+    
+    push(arr,'a','b','c');
+    function push(arr){
+       for(var i=1;i<arguments.length;i++){
+            arr[arr.length]=arguments[i];
+       }
+    }
+    console.log(arr);   */
+
+
+      document.write('<br/>');
+     //函数排序（一）
+     //
+     //函数排序（二）
+
+
+
+
+      document.write('<br/>');
+       
+    //判断数组存在的某一特定值，存在true，false
+    
+      var arr1=[1,2,3,4,5,6,7];
+      var result= exist(arr1,6);
+      alert(result);
+      function exist(arr,value){
+          if(!(typeof arr== 'object' && arguments.length>1)){
+              return '输入错误';
+          }
+          for(var i=0;i<arr.length;i++){
+              if(arr[i]==value){
+                 return true;
+              }
+          }
+
+          return false;
+
+      }
+   
+
+      document.write('<br/>');
+       
+
+      //数组转化为字符串
+      var arr1=[1,2,3,4,5,6,7];
+      var result='';
+      join(arr1,'-');
+      alert(result);
+      function join(arr,str){
+           for(var i=0;i<arr.length;i++){
+                if( i<arr.length-1){
+                    result += arr[i] + str;
+                }else{
+                    result += arr[i];
+                }
+           }
+           return result;
+      }
+ 
+
+      document.write('<br/>');
+        
+     //数组里面筛选偶数的数组元素
+     
+   /*  var arr1=[1,2,3,4,5,6,7];
+       
+       var result= filter(arr1);
+      
+       alert(result);
+       function filter(arr){
+            var newarr=[];
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]%2==0){
+                    newarr[newarr.length]=arr[i];
+                }
+            }
+            return newarr;  
+       }*/
+
+       //作用域
+     /*  function aa(num1,num2){
+          return num1*num2-num1;
+       }
+       function bb(num1,num2){
+          return num1*num2+num2;
+       }
+       function cc(num1,num2){
+          return num1*num2;
+       }
+
+      var result=math(2,3,aa);
+       alert(result);
+       function math(num1,num2,fn){
+           return fn(num1,num2);
+       }*/
+
+
+        //映射 map
+        
+      /*  var arr=[1,2,3,4,5,6,7];
+        var result=map(arr,function(value){
+
+              return value*2;
+        })
+         alert(result);
+        function map(arr,fn){
+           var newarr=[];
+           for(var i=0;i<arr.length;i++){
+               newarr[newarr.length]=fn(arr[i])
+           }
+           return newarr;
+        }*/
+
+       
+                              
+   </script>
+	
+</body>
+</html>
